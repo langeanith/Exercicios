@@ -1,4 +1,5 @@
 #	Lucas Langeani - DSM '23
+
 #	exercício 1
 x = 2
 y = 5
@@ -7,6 +8,7 @@ if y > 8:
 else:
     x = x * 2
 print(x + y)
+
 #	exercicio 2
 cont = 0
 for n in range(9):
@@ -15,12 +17,14 @@ for n in range(9):
             print('oi')
             cont = cont + 1
 print(cont)
+
 #	exercicio 3
 cont = 0
 for n in range(1067, 3628):
     if n % 2 == 0 and n % 7 == 0:
         cont = cont + 1
 print(cont)
+
 #	exercicio 4
 def sortudo(num):
     for numero in str(num):
@@ -36,6 +40,7 @@ for n in range(18644, 33088):
     if sortudo(n):
         cont = cont + 1
 print(cont)
+
 #	exercicio 5
 def SomaCons(num):
     soma = 0
