@@ -1,0 +1,7 @@
+.infoprof
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 25%;
+    margin-right: 25%;
+}
