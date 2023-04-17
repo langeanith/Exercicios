@@ -1,0 +1,80 @@
+Lucas Langeani - DSM '23
+
+	exercício 1
+a = int(input('Insira o tamanho do lado A do triângulo: '))
+b = int(input('Insira o tamanho do lado B do triângulo: '))
+c = int(input('Insira o tamanho do lado C do triângulo: '))
+if a + b > c and a + c > b and b + c > a:
+    if a == b and b == c:
+        print('O triângulo é eqüilátero.')
+    elif a != b and b != c and a != c:
+        print('O triângulo é escaleno.')
+    else:
+        print('O triângulo é isósceles.')
+else:
+    print('Não é um triângulo válido.')
+
+	exercício 2
+year = int(input('Insira o ano: '))
+print(year % 4 == 0 and (year % 100 != 0 or year % 400 == 0))
+
+	exercício 3
+peso = float(input('Insira quantos quilos de peixe foram pescados: '))
+if peso > 50:
+    excesso = peso - 50
+    multa = excesso * 4
+else:
+    excesso = multa = 0
+print(f'Houve um excesso de {excesso:.3f} kg e uma multa de R$ {multa:.2f}.')
+
+	exercício 4
+num1 = int(input('Insira o primeiro número: '))
+num2 = int(input('Insira o segundo número: '))
+num3 = int(input('Insira o terceiro número: '))
+if num1 > num2 and num1 > num3:
+    print(num1)
+elif num2 > num1 and num2 > num3:
+    print(num2)
+elif num3 > num1 and num3 > num2:
+    print(num3)
+
+	exercício 5
+num1 = int(input('Insira o primeiro número: '))
+num2 = int(input('Insira o segundo número: '))
+num3 = int(input('Insira o terceiro número: '))
+if num1 > num2 and num1 > num3:
+    print('Maior número: ',num1)
+    if num2 > num3:
+        print('Menor número: ',num3)
+    elif num3 > num2:
+        print('Menor número: ',num2)
+elif num2 > num1 and num2 > num3:
+    print('Maior número: ',num2)
+    if num1 > num3:
+        print('Menor número: ',num3)
+    elif num3 > num1:
+        print('Menor número: ',num1)
+elif num3 > num1 and num3 > num2:
+    print('Maior número: ',num3)
+    if num1 > num2:
+        print('Menor número: ',num2)
+    elif num2 > num1:
+        print('Menor número: ',num1)
+
+	exercício 6
+HoraSal = float(input('Insira o salário ganho por hora de trabalho: '))
+HoraTrab = float(input('Insira o total de horas trabalhadas no mês: '))
+SalBruto = HoraSal * HoraTrab
+print(f'a. + Salário Bruto : R$ {SalBruto:.2f}')
+print(f'b. - IR (11%) : R$ {SalBruto * .11:.2f}')
+print(f'c. - INSS (8%) : R$ {SalBruto * .08:.2f}')
+print(f'd. - Sindicato (5%) : R$ {SalBruto * .05:.2f}')
+print(f'e. = Salário Líquido : R$ {SalBruto * .76:.2f}')
+
+	exercício 7
+area = int(input('Insira a área a ser pintada: '))
+if area % (54) == 0:
+    latas = area / 54
+else:
+    latas = (area - area % 54) / 54 + 1
+print(f'Deverão ser compradas {latas:.0f} latas por um total de R$ {latas*80:.2f}.')

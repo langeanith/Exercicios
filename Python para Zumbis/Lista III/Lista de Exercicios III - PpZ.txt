@@ -1,0 +1,123 @@
+#	Lucas Langeani - DSM 23'
+
+#	exercício 1
+while True:
+    N = float(input('Insira uma nota de 0 a 10: '))
+    if(0 <= N <= 10):
+        break
+
+#	exercício 2
+username = input('Insira o nome do usuário: ')
+while True:
+    password = input('Insira a senha do usuário: ')
+    if password != username:
+        break
+    else:
+        print('Senha inválida!')
+
+#	exercício 3
+n = 0
+A = 80000
+B = 200000
+while A < B:
+    A = A * 1.03
+    B = B * 1.015
+    n = n + 1
+print('A população de A ultrapassará a população de B após',n ,'anos.')
+
+#	exercício 4
+n = int(input('Defina o n-ésimo número da seqüencia de Fibonacci a ser mostrado: '))
+k = 2
+Fi = Ff = 1
+while k < n:
+    Fi, Ff = Ff, Fi + Ff
+    k = k + 1
+print(f'F{n} = {Ff}')
+
+#	exercício 5
+num1 = int(input('Insira o primeiro número: '))
+num2 = int(input('Insira o segundo número: '))
+while num1 % num2 != 0:
+    num1, num2 = num2, num1 % num2
+print(f'O M.D.C. dos números dados é {num2}')
+
+#	desafios
+#	exercício 1
+num = int(input('Escolha o número a ser verificado: '))
+i = 2
+k = 6
+while k < num:
+    i = i + 1
+    k = (i - 1) * i * (i + 1)
+if k == num:
+    print(f'O número {k} é triangular.')
+else:
+    print(f'O número {num} não é triangular.')
+
+#	exercício 2
+num = float(input('Valor da conta: '))
+num2 = float(input('Valor do pagamento: '))
+dif = int(num2 - num)
+i = 0
+print('Troco:')
+while dif > 0:
+    while dif >= 50:
+        dif, i = dif - 50, i + 1
+    print(f'{i} notas de 50 reais')
+    i = 0
+    while dif >= 20:
+        dif, i = dif - 20, i + 1
+    print(f'{i} notas de 20 reais')
+    i = 0
+    while dif >= 10:
+        dif, i = dif - 10, i + 1
+    print(f'{i} notas de 10 reais')
+    i = 0
+    while dif >= 5:
+        dif, i = dif - 5, i + 1
+    print(f'{i} notas de 5 reais')
+    i = 0
+    while dif >= 2:
+        dif, i = dif - 2, i + 1
+    print(f'{i} notas de 2 reais')
+    i = 0
+    while dif >= 1:
+        dif, i = dif - 1, i + 1
+    print(f'{i} notas de 1 reais')
+
+#	exercício 3
+num = int(input('Escolha um número para verificarmos se é primo: '))
+i = 2
+while i < num:
+    if num % i == 0:
+        print(f'O número {num} não é primo.')
+        break
+    else:
+        i = i + 1
+if i == num:
+    print('O número',num,'é primo.')
+
+#	exercício 4
+num = int(input('Escolha o número a ser decomposto em fatores primos: '))
+i = 2
+while i <= num:
+    mult = 0
+    while num % i == 0:
+        mult = mult + 1
+        num = num / i
+    if mult != 0:
+        print(f'O fator {i} tem multiplicidade {mult}')
+    i = i + 1
+
+#	exercício 5
+num = input('Insira o número a ser invertido: ')
+numinv = 0
+mult = len(str(num))
+num = int(num)
+while num != 0:
+    i = 0
+    while num % 10 != 0:
+        num, i = num - 1, i + 1
+    num , mult = num / 10, mult - 1
+    numinv = numinv + i * 10 ** mult
+print(numinv)

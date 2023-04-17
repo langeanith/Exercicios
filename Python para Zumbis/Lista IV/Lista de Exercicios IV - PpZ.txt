@@ -1,0 +1,78 @@
+#	Lucas Langeani - DSM '23
+
+#	exercício 1
+import random
+num = []
+i = 0
+maior = 0
+menor = 100
+num = random.sample(range(100),10)
+while i < 10:
+    if(num[i] > maior):
+        maior = num[i]
+    if(num[i] < menor):
+        menor = num[i]
+    i = i + 1
+print(f'Foram sorteados 10 números entre 1 e 100.\nO maior número sorteado é {maior}\nO menor número sorteado é {menor}')
+
+#	exercício 2
+import random
+num = []
+par = []
+impar = []
+i = 0
+while i < 20:
+    n = random.randint(1,100)
+    num.append(n)
+    if(n % 2 == 0):
+        par.append(n)
+    else:
+        impar.append(n)
+    i = i + 1
+print(f'Números: {num}\nNúmeros pares: {par}\nNúmeros ímpares: {impar}')
+
+#	exercício 3
+import random
+vetor1 = []
+vetor2 = []
+vetor3 = []
+i = 0
+while i < 10:
+    vetor1.append(random.randint(1,100))
+    vetor2.append(random.randint(1,100))
+    vetor3.append(vetor1[i])
+    vetor3.append(vetor2[i])
+    i = i + 1
+print(f'Vetor 1: {vetor1}\nVetor 2: {vetor2}\nVetor 3: {vetor3}')
+
+#	exercício 4
+def pythonica(p):
+    for letra in p:
+        if letra in 'python':
+            return True
+    return False
+statement = 'The Python Software Foundation and the global Python community welcome and encourage participation by everyone. Our community is based on mutual respect, tolerance, and encouragement, and we are working to help each other live up to these principles. We want our community to be more diverse: whoever you are, and whatever your background, we welcome you.'
+statement = statement.replace(',','').replace('/','').replace(';','')
+statement = statement.lower()
+statement = statement.split()
+python = []
+for i in range(0, len(statement) - 1):
+    if pythonica(statement[i][0] or statement[i][-1]):
+        python.append(statement[i])
+print(python)
+
+#	exercício 5
+def pythonica(p):
+    for letra in p:
+        if letra in 'python':
+            return True
+    return False
+statement = 'The Python Software Foundation and the global Python community welcome and encourage participation by everyone. Our community is based on mutual respect, tolerance, and encouragement, and we are working to help each other live up to these principles. We want our community to be more diverse: whoever you are, and whatever your background, we welcome you.'
+statement = statement.replace(',','').replace(':','').replace('.','')
+statement = statement.lower()
+statement = statement.split()
+python = []
+for i in range(0, len(statement) - 1):
+    if pythonica(statement[i][0:-1]) and len(statement[i]) > 4:
+        python.append(statement[i])
+print(f'Há {len(python)} palavras.')

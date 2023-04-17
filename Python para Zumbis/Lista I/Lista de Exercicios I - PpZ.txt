@@ -1,0 +1,55 @@
+Lucas Langeani - DSM 23'
+
+	exercício 1
+a = int(input('Insira um número: '))
+b = int(input('Insira outro número: '))
+print('A soma desses números é:', a + b)
+
+	exercício 2
+d = int(input('Insira a distância em metros: '))
+print('A mesma distância convertida em milímetros é igual a:',d*1000,'mm')
+
+	exercício 3
+d = int(input('Insira o número de dias: '))
+h = int(input('Insira o número de horas: '))
+m = int(input('Insira o número de minutos: '))
+s = int(input('Insira o número de segundos: '))
+print('Isso dá um total de ', s + 60 * m + 60 * 60 * h + 24 * 60 * 60 * d,' segundos.')
+
+	exercício 4
+sal = float(input('Insira o valor do salário: '))
+aum = float(input('Insira a porcentagem do aumento: '))
+print('O valor do aumento é de R$', sal * aum / 100,', portanto, o valor do novo salário é R$', sal + sal * aum / 100,'.')
+
+	exercício 5
+p = float(input('Insira o preço da mercadoria: '))
+d = float(input('Insira o percentual de desconto: '))
+print('O valor do desconto é de R$',p * d / 100, ', portanto, o valor final da mercadoria é de R$', p - p * d / 100)
+
+	exercício 6
+d = float(input('Insira a distância da viagem em quilômetros: '))
+v = float(input('Insira a velocidade média esperada em quilômetros por hora: '))
+print('O tempo estimado da viagem é de', d / v ,'horas.')
+
+	exercício 7
+tf = float(input('Digite a temperatura em Fahrenheit: '))
+print(tf,'F é equivalente a', (tf - 32) / 1.8 ,'°C.')
+
+	exercício 8
+tc = float(input('Digite a temperatura em graus Celsius: '))
+print(tc,'°C é equivalente a', tc* 1.8 + 32 ,'F.')
+
+	exercício 9
+dist = float(input('Insira a distância em quilômetros percorrida pelo carro: '))
+dias = int(input('Insira por quantos dias o carro foi alugado: '))
+preco = dias * 60 + dist * .15
+print('O preço a ser pago é R$', preco)
+
+	exercício 10
+cig = int(input('Insira a quantidade de cigarros fumados por dia: '))
+tf = int(input('Insira a quantidade de tempo em anos que foram fumados: '))
+dias = tf * 365 * cig * 10 / (24 * 60)
+print('Para esse fumante, foram perdidos', dias, 'dias de vida.')
+
+	exercício 11  ***
+print(len(str(2**1000000)))
