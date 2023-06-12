@@ -1,0 +1,15 @@
+* {
+    margin: 0 auto;
+    max-width: 900px;
+}
+.corpo {
+    text-align: justify;
+}
+h5 {
+    text-align: center; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }

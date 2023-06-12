@@ -1,0 +1,11 @@
+create database contato;
+
+use contato;
+
+create table contato(
+	email varchar(40) not null,
+    assunto varchar(50) not null,
+    descricao varchar(400) not null
+);
+
+select * from contato;
