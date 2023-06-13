@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            body{
+                background-image: url(../static/img/fundo2.png);
+            }
+        </style>
+    </head>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+
+    <body id="bodyhome">
+
+            <!--Topo-->
+    <div class="grid-container">
+        <div>
+            <img src="../static/img/logo.png" style="padding-top: 25px;">
+        </div>
+        <div>
+            <nobr><p style="padding-top: 45px;text-align: end;margin-left: 440px;">
+                <a href="/">Home</a> | 
+                <a href="quemsomos">Quem&nbsp;somos</a> | 
+                <a href="contato">Contato</a> |
+                <a href="/users">Lista</a></nobr></p>
+        </div>
+    </div>
+
+        {% block conteudo %}
+
+        {% endblock %}
+        
+        <!--Rodapé-->
+        <div>
+            <h5>Todos os direitos reservados</h5>
+        </div>
+    </body>
+</html>
