@@ -24,7 +24,7 @@ def contato():
 
         adicionar_contato(email=email, assunto=assunto, descricao=descricao)
 
-        return "Cadastrado com sucesso!<br><a href="/contato">Clique aqui para retornar</a><br><a href="users">Clique aqui para ver os usuários cadastrados</a>"
+        return 'Cadastrado com sucesso!<br><a href="/contato">Clique aqui para retornar</a><br><a href="users">Clique aqui para ver os usuários cadastrados</a>'
     return render_template('contato.html')
 
 @app.route("/users")
