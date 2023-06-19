@@ -87,4 +87,5 @@ sudo docker compose build
 sudo docker compose up
 ```
 
-Acessar no IPv4 público na porta 5000
+*Acessar no IPv4 público na porta 5000
+*Não esqueça de abrir as portas TCP 5000 e 3306 no grupo de segurança
