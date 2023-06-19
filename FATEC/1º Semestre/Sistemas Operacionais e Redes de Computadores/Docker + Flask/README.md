@@ -64,3 +64,27 @@ sudo docker run hello-world
 sudo apt-get update
 sudo apt-get install docker-compose-plugin
 ```
+
+# Baixando os arquivos e executando o compose:
+```console
+git clone https://github.com/langeanith/Exercicios.git
+```
+
+```console
+mv Exercicios/FATEC/1º\ Semestre/Sistemas\ Operacionais\ e\ Redes\ de\ Computadores/Docker\ +\ Flask/ Docker
+```
+
+```console
+sudo rm Exercicios/ -r
+```
+
+```console
+cd Docker
+sudo docker compose build
+```
+
+```console
+sudo docker compose up
+```
+
+Acessar no IPv4 público na porta 5000
