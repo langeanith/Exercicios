@@ -64,4 +64,3 @@ sudo docker run hello-world
 sudo apt-get update
 sudo apt-get install docker-compose-plugin
 ```
-)
