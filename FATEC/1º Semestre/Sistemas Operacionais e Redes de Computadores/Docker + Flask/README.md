@@ -1,7 +1,4 @@
-[https://docs.docker.com/engine/install/ubuntu/
-
-'''Caso tenha instalado algum outro pacote do Docker anteriormente, utilize esse comando:
-for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done'''](https://docs.docker.com/engine/install/ubuntu/
+https://docs.docker.com/engine/install/ubuntu/
 
 # Removendo uma instalação do Docker:
 ```console
